@@ -1,0 +1,418 @@
+page {
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5mm;
+    box-shadow: 0 0 5mm rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+page[margin], page[margin="standard"] {
+    padding: 25mm;
+}
+
+page[margin="thin"] {
+    padding: 12.7mm;
+}
+
+page[margin="thick"] {
+    padding: 25.4mm 50.8mm;
+}
+
+@media print {
+    body, page {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        box-shadow: none;
+        margin: 0;
+    }
+    @page {
+        margin: 0;
+    }
+    body {
+        background: none;
+    }
+}
+
+page[size="A0"], page[size="a0"] {
+    width: 841mm;
+    height: 1189mm;
+}
+
+page[size="A0"][layout="landscape"], page[size="a0"][layout="landscape"] {
+    width: 1189mm;
+    height: 841mm;
+}
+
+page[size="A1"], page[size="a1"] {
+    width: 594mm;
+    height: 841mm;
+}
+
+page[size="A1"][layout="landscape"], page[size="a1"][layout="landscape"] {
+    width: 841mm;
+    height: 594mm;
+}
+
+page[size="A2"], page[size="a2"] {
+    width: 420mm;
+    height: 594mm;
+}
+
+page[size="A2"][layout="landscape"], page[size="a2"][layout="landscape"] {
+    width: 594mm;
+    height: 420mm;
+}
+
+page[size="A3"], page[size="a3"] {
+    width: 297mm;
+    height: 420mm;
+}
+
+page[size="A3"][layout="landscape"], page[size="a3"][layout="landscape"] {
+    width: 420mm;
+    height: 297mm;
+}
+
+page[size="A4"], page[size="a4"] {
+    width: 210mm;
+    height: 297mm;
+}
+
+page[size="A4"][layout="landscape"], page[size="a4"][layout="landscape"] {
+    width: 297mm;
+    height: 210mm;
+}
+
+page[size="A5"], page[size="a5"] {
+    width: 148mm;
+    height: 210mm;
+}
+
+page[size="A5"][layout="landscape"], page[size="a5"][layout="landscape"] {
+    width: 210mm;
+    height: 148mm;
+}
+
+page[size="A6"], page[size="a6"] {
+    width: 105mm;
+    height: 148mm;
+}
+
+page[size="A6"][layout="landscape"], page[size="a6"][layout="landscape"] {
+    width: 148mm;
+    height: 105mm;
+}
+
+page[size="A7"], page[size="a7"] {
+    width: 74mm;
+    height: 105mm;
+}
+
+page[size="A7"][layout="landscape"], page[size="a7"][layout="landscape"] {
+    width: 105mm;
+    height: 74mm;
+}
+
+page[size="A8"], page[size="a8"] {
+    width: 52mm;
+    height: 74mm;
+}
+
+page[size="A8"][layout="landscape"], page[size="a8"][layout="landscape"] {
+    width: 74mm;
+    height: 52mm;
+}
+
+page[size="A9"], page[size="a9"] {
+    width: 37mm;
+    height: 52mm;
+}
+
+page[size="A9"][layout="landscape"], page[size="a9"][layout="landscape"] {
+    width: 52mm;
+    height: 37mm;
+}
+
+page[size="A10"], page[size="a10"] {
+    width: 26mm;
+    height: 37mm;
+}
+
+page[size="A10"][layout="landscape"], page[size="a10"][layout="landscape"] {
+    width: 37mm;
+    height: 26mm;
+}
+
+page[size="B0"], page[size="b0"] {
+    width: 1000mm;
+    height: 1414mm;
+}
+
+page[size="B0"][layout="landscape"], page[size="b0"][layout="landscape"] {
+    width: 1414mm;
+    height: 1000mm;
+}
+
+page[size="B1"], page[size="b1"] {
+    width: 707mm;
+    height: 1000mm;
+}
+
+page[size="B1"][layout="landscape"], page[size="b1"][layout="landscape"] {
+    width: 1000mm;
+    height: 707mm;
+}
+
+page[size="B2"], page[size="b2"] {
+    width: 500mm;
+    height: 707mm;
+}
+
+page[size="B2"][layout="landscape"], page[size="b2"][layout="landscape"] {
+    width: 707mm;
+    height: 500mm;
+}
+
+page[size="B3"], page[size="b3"] {
+    width: 353mm;
+    height: 500mm;
+}
+
+page[size="B3"][layout="landscape"], page[size="b3"][layout="landscape"] {
+    width: 500mm;
+    height: 353mm;
+}
+
+page[size="B4"], page[size="b4"] {
+    width: 250mm;
+    height: 353mm;
+}
+
+page[size="B4"][layout="landscape"], page[size="b4"][layout="landscape"] {
+    width: 353mm;
+    height: 250mm;
+}
+
+page[size="B5"], page[size="b5"] {
+    width: 176mm;
+    height: 250mm;
+}
+
+page[size="B5"][layout="landscape"], page[size="b5"][layout="landscape"] {
+    width: 250mm;
+    height: 176mm;
+}
+
+page[size="B6"], page[size="b6"] {
+    width: 125mm;
+    height: 176mm;
+}
+
+page[size="B6"][layout="landscape"], page[size="b6"][layout="landscape"] {
+    width: 176mm;
+    height: 125mm;
+}
+
+page[size="B7"], page[size="b7"] {
+    width: 88mm;
+    height: 125mm;
+}
+
+page[size="B7"][layout="landscape"], page[size="b7"][layout="landscape"] {
+    width: 125mm;
+    height: 88mm;
+}
+
+page[size="B8"], page[size="b8"] {
+    width: 62mm;
+    height: 88mm;
+}
+
+page[size="B8"][layout="landscape"], page[size="b8"][layout="landscape"] {
+    width: 88mm;
+    height: 62mm;
+}
+
+page[size="B9"], page[size="b9"] {
+    width: 44mm;
+    height: 62mm;
+}
+
+page[size="B9"][layout="landscape"], page[size="b9"][layout="landscape"] {
+    width: 62mm;
+    height: 44mm;
+}
+
+page[size="B10"], page[size="b10"] {
+    width: 31mm;
+    height: 44mm;
+}
+
+page[size="B10"][layout="landscape"], page[size="b10"][layout="landscape"] {
+    width: 44mm;
+    height: 31mm;
+}
+
+page[size="C0"], page[size="c0"] {
+    width: 917mm;
+    height: 1297mm;
+}
+
+page[size="C0"][layout="landscape"], page[size="c0"][layout="landscape"] {
+    width: 1297mm;
+    height: 917mm;
+}
+
+page[size="C1"], page[size="c1"] {
+    width: 648mm;
+    height: 917mm;
+}
+
+page[size="C1"][layout="landscape"], page[size="c1"][layout="landscape"] {
+    width: 917mm;
+    height: 648mm;
+}
+
+page[size="C2"], page[size="c2"] {
+    width: 458mm;
+    height: 648mm;
+}
+
+page[size="C2"][layout="landscape"], page[size="c2"][layout="landscape"] {
+    width: 648mm;
+    height: 458mm;
+}
+
+page[size="C3"], page[size="c3"] {
+    width: 324mm;
+    height: 458mm;
+}
+
+page[size="C3"][layout="landscape"], page[size="c3"][layout="landscape"] {
+    width: 458mm;
+    height: 324mm;
+}
+
+page[size="C4"], page[size="c4"] {
+    width: 229mm;
+    height: 324mm;
+}
+
+page[size="C4"][layout="landscape"], page[size="c4"][layout="landscape"] {
+    width: 324mm;
+    height: 229mm;
+}
+
+page[size="C5"], page[size="c5"] {
+    width: 162mm;
+    height: 229mm;
+}
+
+page[size="C5"][layout="landscape"], page[size="c5"][layout="landscape"] {
+    width: 229mm;
+    height: 162mm;
+}
+
+page[size="C6"], page[size="c6"] {
+    width: 114mm;
+    height: 162mm;
+}
+
+page[size="C6"][layout="landscape"], page[size="c6"][layout="landscape"] {
+    width: 162mm;
+    height: 114mm;
+}
+
+page[size="C7"], page[size="c7"] {
+    width: 81mm;
+    height: 114mm;
+}
+
+page[size="C7"][layout="landscape"], page[size="c7"][layout="landscape"] {
+    width: 114mm;
+    height: 81mm;
+}
+
+page[size="C8"], page[size="c8"] {
+    width: 57mm;
+    height: 81mm;
+}
+
+page[size="C8"][layout="landscape"], page[size="c8"][layout="landscape"] {
+    width: 81mm;
+    height: 57mm;
+}
+
+page[size="C9"], page[size="c9"] {
+    width: 40mm;
+    height: 57mm;
+}
+
+page[size="C9"][layout="landscape"], page[size="c9"][layout="landscape"] {
+    width: 57mm;
+    height: 40mm;
+}
+
+page[size="C10"], page[size="c10"] {
+    width: 28mm;
+    height: 40mm;
+}
+
+page[size="C10"][layout="landscape"], page[size="c10"][layout="landscape"] {
+    width: 40mm;
+    height: 28mm;
+}
+
+page[size="half-letter"] {
+    width: 140mm;
+    height: 216mm;
+}
+
+page[size="letter"][layout="landscape"] {
+    width: 279mm;
+    height: 216mm;
+}
+
+page[size="half-letter"][layout="landscape"] {
+    width: 216mm;
+    height: 140mm;
+}
+
+page[size="letter"] {
+    width: 216mm;
+    height: 279mm;
+}
+
+page[size="legal"] {
+    width: 216mm;
+    height: 356mm;
+}
+
+page[size="legal"][layout="landscape"] {
+    width: 279mm;
+    height: 356mm;
+}
+
+page[size="junior-legal"] {
+    width: 127mm;
+    height: 203mm;
+}
+
+page[size="junior-legal"][layout="landscape"] {
+    width: 203mm;
+    height: 127mm;
+}
+
+page[size="ledger"], page[size="tabloid"] {
+    width: 279mm;
+    height: 432mm;
+}
+
+page[size="ledger"][layout="landscape"], page[size="tabloid"][layout="landscape"] {
+    width: 432mm;
+    height: 279mm;
+}
